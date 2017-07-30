@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Tabs.AzureTable" Title="Database">
+    <ContentPage.Padding>
+        <OnPlatform x:TypeArguments="Thickness" iOS="0, 20, 0, 0" />
+    </ContentPage.Padding>
+    <ContentPage.Content>
+        <StackLayout>
+            <Button Text="Display database" Clicked="Handle_ClickedAsync" />
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Item Tag" HorizontalOptions="FillAndExpand" FontAttributes="Bold"  Margin="10,5,0,0" FontSize="Medium" TextColor="Black"></Label>
+                <Label Text="Probability" FontAttributes="Bold"  Margin="0,5,10,0" FontSize="Medium" TextColor="Black"></Label>
+            </StackLayout>
+            
+            <ListView x:Name="pList" RowHeight="30">
+                <ListView.ItemTemplate>
+                    <DataTemplate >
+                        <ViewCell >
+                            <StackLayout Orientation="Horizontal">
+                                <Label Text="{Binding Tag}" HorizontalOptions="FillAndExpand" Margin="10,5,0,0"  />
+                                <Label Text="{Binding Probability}" Margin="0,5,10,0"  />
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

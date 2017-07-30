@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Tabs.Info">
+    <ContentPage.Content>
+
+        
+        <StackLayout Orientation="Vertical" Margin="20,20,20,20" >
+            <Label Text="About me" FontSize="Large" HorizontalOptions="Center" TextColor="Black"/>
+            <Label Text="My name is Karl, 3rd year compsci student at UoA"/>
+            <Label Text="This app allows you to take a photo then tells you if an object is a PC peripherals or not, if so, it will tell you exactly what it is (keyboard, mouse, monitor...)." VerticalOptions="StartAndExpand"/>
+            <Label Text="Trying to make this long so the tab doesn't look empty..."/>
+        </StackLayout>
+  
+    </ContentPage.Content>
+    
+</ContentPage>
